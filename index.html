@@ -4,26 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mechanical Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: rgba(0, 7, 99, 0.76);
+            color: white;
+        }
+        .header .navbar ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            gap: 15px;
+        }
+        .header .navbar ul li a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container_logo">
-            <img src="images/logo.png" alt="logo">
+    <header class="header">
+        <div style="
+            height: 100%;
+            width: 80%; max-width: 1200px; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between; align-items: center; align-items: center;">
+            <div class="container_logo">
+                <!-- <img src="images/logo.png" alt="logo"> -->
+                <a href="index.html" style="font-size: 30px; text-decoration: none; color: #fff;">Mechanical</a>
+            </div>
+            <navbar class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </navbar>
         </div>
-        <navbar>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </navbar>
     </header>
     <main>
-        <img src="" alt="main">
+        <img src="images/image_1.webp" alt="Taller de reparacion">
     </main>
+    <div class="cta-section">
+        <span>Taller especialista de reparacion</span>
+        <h1>Reserva tu turno para la atencion</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio mollitia hic aperiam, doloremque delectus magnam in dolores explicabo? Quisquam dolorem, iure animi voluptatum reiciendis culpa aperiam! Ea exercitationem praesentium unde!</p>
+        <div class="buttons">
+            <button>Reserva tu turno</button>
+            <button>Ver servicios</button>
+        </div>
+    </div>
     <div class="services">
-        
+
     </div>
     <div class="main_sponsors">
         <div class="container_sponsors">
